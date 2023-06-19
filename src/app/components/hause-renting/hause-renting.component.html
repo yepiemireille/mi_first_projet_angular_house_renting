@@ -1,0 +1,118 @@
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+               <!--  <div class="card-header">
+                    <h4>Liste des différentes maisons
+                        <a routerLink="/" class="btn btn-primary float-end">Add maisons</a>
+                    </h4> 
+                </div>-->
+                <div class="card-body">
+
+                    <table class="table table-bordered table-striped">
+                        <thead>
+                            <tr>
+                                <th>Localite</th>
+                                <th>Commune</th>
+                                <th>Quartier</th>
+                                <th>Precision</th>
+                                <th>Type de maison</th>
+                                <th>Nombre de piece</th> 
+                                <th>Prix</th>
+                                <th>Cotion</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- <tr *ngFor="let liste of liste_houses">  -->
+                            <tr>
+                                <!--<td>{{ liste.localite }}</td>  -->
+                               <!--  <td>{{ liste.commune }}</td> -->
+                               <!--  <td>{{ liste.quartier }}</td> -->
+                               <!--  <td>{{ liste.precision }}</td> -->
+                               <!-- <td>{{ liste.type_maison }}</td>  -->
+                                <!-- <td>{{ liste.nbre_piece }}</td> -->
+                               <!--  <td>{{ liste.prix }}</td> -->
+                               <!--   <td>{{ liste.cotion }}</td> routerLink="['/detail-house', id]" -->
+                                <td>
+                                    <a class="btn btn-info btn-sm">View</a>
+                                    <!-- <a class="btn btn-success btn-sm">Edit</a> -->
+                                <!-- <form class="d-inline">
+                                    <button type="submit" value="" class="btn btn-danger btn-sm">Delete</button>
+                                </form> -->
+                                </td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- *** -->
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-header">
+                    <h4>Hause Edit 
+                        <a>BACK</a>
+                    </h4>
+                </div>
+                <div class="card-body">
+                    <div class="container">
+                    <form>
+                        <div class="row">
+                            <div class="mb-6">
+                                <label>Localité</label>
+                                <input type="text" value="" class="form-control">
+                            </div> <br><br>
+                            <div class="mb-6">
+                                <label>Commune</label>
+                                <input type="text" value="" class="form-control">
+                            </div><br> <br>
+                        </div>
+                        <div class="row">
+                            <div class="mb-6">
+                                <label>Quartier</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="mb-6">
+                                <label>Precision</label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="mb-6">
+                                <label>Type de maison</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="mb-6">
+                                <label>Nombre de piece</label>
+                                <input type="number" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="mb-6">
+                                <label>Prix</label>
+                                <input type="number" class="form-control">
+                            </div>
+                            <div class="mb-6">
+                                <label>Cotion</label>
+                                <input type="number" class="form-control">
+                            </div>
+                        </div>
+                            <div class="mb-3">
+                                <button type="submit" class="btn btn-primary">
+                                            Update House
+                                </button>
+                        </div>
+                    </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

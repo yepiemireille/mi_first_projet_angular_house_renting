@@ -1,0 +1,46 @@
+<p>details-view-users works!</p>
+<div class="card-footer">
+  <button class="btn btn-outline-info d-flex" (click)="backToListeUser()">
+    <!-- <span class=""> keyboard_arrow_left</span> -->
+    Retour à la liste
+  </button>
+</div> <br> 
+  
+<!-- *** -->
+<div class="container">
+    <div class="row" *ngIf="user">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="{{ user.usersImage }}" style="width:50%;height:50%;" class="card-img-top" alt="Photo de l'utilisateur">
+          <div class="card-body">
+            <h5 class="card-title">{{ user.usersNom }}</h5>
+            <p class="card-text">Description ou informations supplémentaires sur l'utilisateur.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-8">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Détails de l'utilisateur</h5>
+            <table class="table">
+              <tbody>
+                <tr>
+                  <th scope="row">Nom:</th>
+                  <td>{{ user.usersNom }}</td>
+                </tr>
+                <tr>
+                  <th scope="row">Âge:</th>
+                  <td>{{ user.usersAge }}</td>
+                </tr>
+                <tr>
+                  <th scope="row">Ville:</th>
+                  <td>{{ user.usersVille }}</td>
+                </tr>
+                <!-- Ajoutez davantage de lignes pour afficher d'autres détails de l'utilisateur -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>

@@ -1,0 +1,24 @@
+
+[
+    {
+        "usersId": 1,
+        "usersNom": "Sery Oscar",
+        "usersAge": 34,
+        "usersVille": "Aboisso",
+        "usersImage": "assets/img5.jpg"
+    },
+    {
+        "usersId": 2,
+        "usersNom": "Traore Moussa",
+        "usersAge": 34,
+        "usersVille": "Touba",
+        "usersImage": "assets/img5.jpg"
+    },
+    {
+        "usersId": 3,
+        "usersNom": "ZEGBOLOU Marc-dexter",
+        "usersAge": 10000,
+        "usersVille": "Abidjan",
+        "usersImage": "assets/img5.jpg"
+    }
+]

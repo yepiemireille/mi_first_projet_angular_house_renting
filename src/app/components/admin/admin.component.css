@@ -1,0 +1,9 @@
+.imgs{
+    width: 75%;
+    margin-left: 10%;
+}
+
+.disabled-link {
+    color: black;
+    text-decoration: none;
+}

@@ -1,0 +1,42 @@
+<p>liste-users works!</p>
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-12">
+               <div class="card-header">
+                    <h4>Liste des différents utilisateurs
+                        <a routerLink="/basic/admin/admin/users/users/users-add" class="btn btn-primary float-end">Add users</a>
+                    </h4> 
+                </div>  <!--  d-flex justify-content-center -->
+                <div class="card-body">
+
+                    <table class="table table-bordered table-striped">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Nom & Prenoms</th>
+                                <th scope="col">Âge</th>
+                                <th scope="col">Ville</th>
+                                <th scope="col">Image</th>
+                                <th scope="col">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let user of users">
+                                <th scope="row">1</th>
+                                <td>{{user.usersNom}}</td>
+                                <td>{{user.usersAge}}</td>
+                                <td>{{user.usersVille}}</td>
+                                <td><img src="{{user.usersImage}}" class="card-img-top" style="height:10%;width: 10%;" alt="..."></td>
+                                <td>
+                                <button [routerLink]="['/basic/admin/admin/users/users/users-view', user.usersId]" class="btn btn-sm btn-primary">Voir</button>
+                                <button routerLink="/basic/admin/admin/users/users/users-edit" class="btn btn-sm btn-warning">Modifier</button>
+                                <button class="btn btn-sm btn-danger">Supprimer</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+        </div>
+    </div>
+</div>
