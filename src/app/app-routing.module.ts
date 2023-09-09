@@ -8,7 +8,7 @@ import { PageNotFindComponent } from './components/page-not-find/page-not-find.c
 
 const routes: Routes = [
   {path:'basic', component: BasicLayoutComponent, 
-    // canActivate: [AuthGuard],
+    
     children:[
       // {path:'profile',  loadChildren: () => import('./profile/profile.module').then(m => m.ProfileModule)},
       {path:'admin', loadChildren: () => import('./components/admin/admin.module').then(m => m.AdminModule)},
