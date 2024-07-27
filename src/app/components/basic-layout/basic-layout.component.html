@@ -1,34 +1,42 @@
-<div class="d-flex" id="wrapper" [ngClass]="{'toggled': toggled}">
-  <ul>
-    <li>
-      <a class="active" routerLink="/basic/home"
-      routerLinkActive="activebutton" class="list-group-item list-group-item-action bg-light">Accueil</a>
-    </li>
-    <li>
-      <a routerLink="/basic/admin"
-      routerLinkActive="activebutton" class="list-group-item list-group-item-action bg-light">Administratreur</a>
-    </li>
-    <li>
-      <a routerLink="/basic/roomer"
-      routerLinkActive="activebutton" class="list-group-item list-group-item-action bg-light">Roomer</a>
-    </li>
-    <li>
-      <a routerLink="/basic/profile"
-      routerLinkActive="activebutton" class="list-group-item list-group-item-action bg-light">Profile</a>
-    </li>
-    <li>
-      <a routerLink="/" class="list-group-item list-group-item-action bg-light">Setting</a>
-    </li>
-    <form class="form-inline my-2 my-lg-0">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Logout</button>
-    </form> <!--  (click)="onLogoutClick()" -->
-  </ul>
-  
-  <div style="margin-left:25%;padding:1px 16px;height:1000px;">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
-      <h2>Projet Experience</h2>      
-    </nav>
-    <!-- *** -->
-    <router-outlet></router-outlet>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-2 d-flex" id="wrapper" [ngClass]="{'toggled': toggled}">
+      <ul>
+        <li>
+          <a class="active" routerLink="/basic/home"
+          routerLinkActive="activebutton" class="list-group-item list-group-item-action bg-light">Accueil</a>
+        </li> 
+        <li>
+          <a routerLink="/basic/admin"
+          routerLinkActive="activebutton" class="list-group-item list-group-item-action bg-light">Administratreur</a>
+        </li>
+        <li>
+          <a routerLink="/basic/roomer"
+          routerLinkActive="activebutton" class="list-group-item list-group-item-action bg-light">Roomer</a>
+        </li>
+        <li>
+          <a routerLink="/basic/profile"
+          routerLinkActive="activebutton" class="list-group-item list-group-item-action bg-light">Profile</a>
+        </li>
+        <li>
+          <a routerLink="/" class="list-group-item list-group-item-action bg-light">Setting</a>
+        </li>
+        <form class="form-inline my-2 my-lg-0">
+          <button class="btn btn-primary my-2 my-sm-0" routerLink="/" type="submit">Logout</button>
+        </form> <!--  (click)="onLogoutClick()" -->
+      </ul>
+    </div>
+    <div class="col-10">
+      <div class="header-horizontal">
+        <h2>Espace ....</h2> 
+        <button class="btn btn-primary" (click)="goBack()">Retour</button>     
+      </div>
+    <div>
+        
+    </div>
+      <div>
+        <router-outlet></router-outlet> 
+      </div>
+    </div>
   </div>
 </div>

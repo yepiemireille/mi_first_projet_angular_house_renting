@@ -11,7 +11,7 @@ body {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    width: 25%;
+    width: 16%;
     background-color: #f1f1f1;
     position: fixed;
     height: 100%;
@@ -21,8 +21,9 @@ body {
   li a {
     display: block;
     color: #000;
-    padding: 8px 16px;
+    padding: 8px 1px;
     text-decoration: none;
+    font-size: 23px;
   }
   
   li a.active {
@@ -34,5 +35,37 @@ body {
     background-color: #555;
     color: black;
   }
+
+  /* ul{
+    overflow: hidden;
+  } */
+
+  .form-inline button{
+    padding: 6px 83px;
+  }
+  
+  .header-horizontal{
+    padding: 3px 2px;
+    background-color: #84bbf3;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header-horizontal button{
+    /*  */
+  }
   
   
+.container{
+  background-color: white;
+}
+
+.imgs{
+  width: 75%;
+  margin-left: 10%;
+}
+
+.disabled-link {
+  color: black;
+  text-decoration: none;
+}

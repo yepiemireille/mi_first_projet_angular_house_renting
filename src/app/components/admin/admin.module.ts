@@ -7,6 +7,7 @@ import { RouterModule } from '@angular/router';
 import { HauseRentingComponent } from '../hause-renting/hause-renting.component';
 import { RoomerComponent } from '../roomer/roomer.component';
 import { RoleComponent } from '../role/role.component';
+import { AdminHomeComponent } from '../admin-home/admin-home.component';
 
 
 
@@ -15,7 +16,8 @@ import { RoleComponent } from '../role/role.component';
     AdminComponent,
     HauseRentingComponent,
     RoomerComponent,
-    RoleComponent
+    RoleComponent,
+    AdminHomeComponent,
   ],
   imports: [
     CommonModule,

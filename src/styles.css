@@ -2,6 +2,16 @@
 @import "~bootstrap/dist/css/bootstrap.css"; /* bootstrap.min.css */
 /* @import "~material-icons/iconfont/material-icons.css"; */
 
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    /* font-family: var(--font-family);Helvetica Neue,  */
+    margin: 0px;
+    padding: 0px;
+    /* height: 100%; */
+    /* background-color: #e9ecef; */
+}
+
 .activebutton {
     box-shadow: inset 0 1px 0 0 #dcecfb;
     background: #bddbfa linear-gradient(to bottom, #bddbfa 5%, #80b5ea 100%);
